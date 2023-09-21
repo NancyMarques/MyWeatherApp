@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="location">
+            <div class="header">
+                <img src="resources/map.png" width="50px">
+                <input id="city" type="text" placeholder="Insert a city">
+            </div>
+            <button class="search-btn" onclick="getCity()"><img src="resources/loupe.png"></button>
+         </div>
+         <div class="content-main">
+            <h3 id="cityName"></h3>
+            <h1 id="temperature"></h1>  
+            <img id="weather">
+            <h5 id="description"></h5>
+        </div>
+        
+        <div class="footer">
+            <div class="humidity">
+                <div>
+                    <img src="resources/humidity.png" width="50px">
+                </div>
+                <div class="infoHumidity">
+                    <span id="humidityPercent"></span>
+                    <span id="humidity">Humidity</span> 
+                </div>
+            </div>
+            <div class="wind">
+                <div>
+                    <img src = "resources/wind.webp" width="50px">
+                </div>
+                <div class="infoWind">
+                    <span id="windVelocity"></span>
+                    <span id="windSpeed">Wind Speed</span> 
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+<script src="script.js"></script>  
+</body>
+</html>
